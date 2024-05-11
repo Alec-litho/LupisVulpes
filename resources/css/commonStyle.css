@@ -1,0 +1,18 @@
+
+.contentWrapper {
+    margin: 0 auto;
+
+    width: 75%;
+    min-height: 500px;
+    border: 1px solid orange;
+}
+.mainWrapper {
+    margin: 0 auto;
+    width: 75%;
+    height: auto;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: auto;
+    align-items: center;
+}

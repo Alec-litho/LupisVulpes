@@ -1,0 +1,33 @@
+
+
+.header {
+    width: 100%;
+    height: 70px;
+    background:linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.288), rgba(82, 82, 82, 0));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 40px;
+}
+.header__lu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.header__navPage {
+    font-weight: 600;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.534);
+    cursor: pointer;
+}
+.header__navPage_active {
+    font-weight: 600;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+.header__logo {
+    width: 200px;
+    height: 100%;
+}
