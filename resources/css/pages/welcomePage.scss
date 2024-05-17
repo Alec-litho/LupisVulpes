@@ -1,0 +1,175 @@
+@import "../_vars";
+
+.mainWrapper {
+    width: 90%;
+    max-width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 5;
+    align-items: center;
+}
+.welcomePage {
+    background-image: url("../../../public/images/welcomepage_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 2000px;
+}
+
+.bodyContent {
+    display: flex;
+    flex-direction: column;
+    gap: 170px;
+}
+.AboutMeComponent, .MiniGalleryComponent {
+    margin: 0 auto;
+    align-self: center;
+    width: 70%;
+    min-height: 500px;
+    border: 1px solid orange;
+}
+.ProjectReviewComponent, .AnimationsSlider {
+    margin: 0 auto;
+    align-self: center;
+    width: 100%;
+    min-height: 550px;
+    border: 2px solid rgb(224, 44, 170);
+}
+
+.WelcomeComponent {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.lines {
+    display: flex;
+    justify-content: space-between;
+}
+.line {
+    width: 45%;
+    height: 7px;
+    background-color: white;
+}
+
+.AboutMeComponent {
+    position: relative;
+    display: flex;
+    backdrop-filter: blur(10px);
+    .headerText {
+        position: absolute;
+        text-align: center;
+        top: -45px;
+        width: 100%;
+    }
+    .leftSideComponent {
+        padding: 20px;
+        width: 60%;
+        background: linear-gradient(90deg, rgba(12, 12, 12, 0.63), rgba(51, 51, 51, 0.43));
+
+        .rightSideComponent__img {
+            width: 120px;
+            padding-bottom: 20px;
+        }
+        p {
+            font-weight: 600;
+            font-size: 20px;
+        }
+        .rightSideComponent__links {
+            align-self: flex-end;
+        }
+        .rightSideComponent__links  img {
+            width: 50px;
+        }
+    }
+    .rightSideComponent {
+        background: rgba(27, 45, 73, 0.9);
+        padding: 20px;
+        width: 40%;
+        position: relative;
+        img {
+            z-index: 20;
+            width: 500px;
+            height: auto;
+            position: absolute;
+            left: 50px;
+            top: -30px;
+        }
+    }
+    .rightSideComponent__links {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.ProjectReviewComponent {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    position: relative;
+
+
+    %ProjectReviewComponent__image {
+        display: flex;
+        height: 100%;
+        width: auto;
+        position: absolute;
+        top: 0;
+        padding: 30px 50px;
+
+        .ProjectReviewComponent__showName {
+            position: absolute;
+            left: 10%;
+            top: 65%;
+        }
+        img {
+            filter: brightness(65%)
+        }
+
+    }
+    .ProjectReviewComponent__primaryImage {
+        @extend %ProjectReviewComponent__image;
+        left: 0;
+        z-index: 3;
+    }
+    .ProjectReviewComponent__secondaryImage {
+        @extend %ProjectReviewComponent__image;
+        left: 10%;
+        z-index: 2;
+    }
+    .ProjectReviewComponent__tertiaryImage {
+        @extend %ProjectReviewComponent__image;
+        left: 18%;
+        z-index: 1;
+    }
+}
+
+.MiniGalleryComponent {
+    position: relative;
+
+    .MiniGalleryComponent__img1 {grid-area: a;}
+    .MiniGalleryComponent__img2 {grid-area: b;}
+    .MiniGalleryComponent__img3 {grid-area: c}
+    .MiniGalleryComponent__reviewWindow {
+        display: grid;
+        grid-template-areas: 
+        "a b"
+        "a c";
+
+        img {
+            object-fit:cover;
+            height: 100%;
+            width: auto;
+        }
+    }
+    .MiniGalleryComponent__menuBar{
+        position: absolute;
+        width: 100%;
+        min-height: 150px;
+        background-color: rgba(27, 45, 73, 0.7);
+        backdrop-filter: blur(10px);
+    }
+}
