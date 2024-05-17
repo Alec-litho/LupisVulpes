@@ -1,0 +1,25 @@
+@import "./utils/_reset";
+@import "./_vars";
+
+html {
+  font-size: $font-base;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.5;
+  color: $font-base-color;
+
+}
+
+p {
+  font-size: $font-base-size;
+}
+h1 {
+  z-index: 10;
+  position: absolute;
+  font-weight: 600;
+  font-family: $font-primary;
+  letter-spacing: 15px;
+  font-size: 64px;
+}
