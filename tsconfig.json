@@ -7,6 +7,8 @@
         "strict": true,
         "isolatedModules": true,
         "target": "ESNext",
+        "allowSyntheticDefaultImports": true,
+        "types": ["vite-plugin-svgr/client"],
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "noEmit": true,
