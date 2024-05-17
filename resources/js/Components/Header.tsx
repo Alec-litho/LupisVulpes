@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <div className="header">
             <div className="header__logo">
-                <img src="./public/images/header_logo.png" alt="" className="header__logo"/>
+                <img src="./images/header_logo.png" alt="" className="header__logo"/>
             </div>
             <div className="header__navigation">
                 <ul className="header__lu">
