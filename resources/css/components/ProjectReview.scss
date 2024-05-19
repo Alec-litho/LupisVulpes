@@ -1,0 +1,50 @@
+
+.ProjectReviewComponent {
+    backdrop-filter: blur(10px);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+
+    .ProjectReviewComponent__wrapper {
+        position: relative;
+        display: flex;
+        width: 1270px;
+    }
+    %ProjectReviewComponent__image {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        margin: 0 auto;
+        width: auto;
+        position: absolute;
+        top: 0;
+        padding: 30px 50px;
+
+        .ProjectReviewComponent__showName {
+            position: absolute;
+            left: 10%;
+            top: 65%;
+        }
+        img {
+            filter: brightness(65%)
+        }
+
+    }
+    .ProjectReviewComponent__primaryImage {
+        @extend %ProjectReviewComponent__image;
+        left: 0;
+        z-index: 3;
+    }
+    .ProjectReviewComponent__secondaryImage {
+        @extend %ProjectReviewComponent__image;
+        left: 10%;
+        z-index: 2;
+    }
+    .ProjectReviewComponent__tertiaryImage {
+        @extend %ProjectReviewComponent__image;
+        left: 18%;
+        z-index: 1;
+    }
+}
+
