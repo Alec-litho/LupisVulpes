@@ -1,0 +1,50 @@
+
+.AboutMeComponent {
+    position: relative;
+    display: flex;
+    backdrop-filter: blur(10px);
+    .headerText {
+        position: absolute;
+        text-align: center;
+        top: -45px;
+        width: 100%;
+    }
+    .leftSideComponent {
+        padding: 20px;
+        width: 60%;
+        background: linear-gradient(90deg, rgba(12, 12, 12, 0.63), rgba(51, 51, 51, 0.43));
+
+        .rightSideComponent__img {
+            width: 120px;
+            padding-bottom: 20px;
+        }
+        p {
+            font-weight: 600;
+            font-size: 20px;
+        }
+        .rightSideComponent__links {
+            align-self: flex-end;
+        }
+        .rightSideComponent__links  img {
+            width: 50px;
+        }
+    }
+    .rightSideComponent {
+        background: rgba(27, 45, 73, 0.9);
+        padding: 20px;
+        width: 40%;
+        position: relative;
+        img {
+            z-index: 20;
+            width: 450px;
+            height: auto;
+            position: absolute;
+            left: 50px;
+            top: -30px;
+        }
+    }
+    .rightSideComponent__links {
+        display: flex;
+        gap: 10px;
+    }
+}
