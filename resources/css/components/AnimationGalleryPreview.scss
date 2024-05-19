@@ -1,0 +1,36 @@
+@import "../default";
+
+.AnimationGalleryReviewComponent {
+    @extend %dark_background;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .AnimationGalleryReviewComponent_wrapper {
+        position: relative;
+        display: flex;
+        width: 1270px;
+        padding: 30px 50px;
+    }
+    .animationPreview {
+
+        img {
+            filter: brightness(55%);
+            width: 1200px;
+        }
+    }
+    .animationPreview.hide {
+        display: none;
+    }
+
+    .animationDescription {
+        width: 650px;
+        border-left: 5px solid white;
+        border-bottom: 5px solid white;
+        padding: 0 0 20px 20px;
+        position: absolute;
+        top: 440px;
+        left: 150px;
+    }
+ 
+}
