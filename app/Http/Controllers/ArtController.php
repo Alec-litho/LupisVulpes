@@ -20,5 +20,6 @@ class ArtController extends Controller
         $ArtCollection = Art::whereIn("id", $ArtIds)->get();
         return $ArtCollection;
     }
+    
 
 }

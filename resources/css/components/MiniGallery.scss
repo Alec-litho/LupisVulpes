@@ -1,3 +1,4 @@
+
 .MiniGalleryComponent {
     position: relative;
     display: flex;
@@ -27,12 +28,74 @@
         }
     }
     .MiniGalleryComponent__menuBar{
+        overflow: hidden;
         position: absolute;
-        top: 75%;
+        top: 50%;
         width: 100%;
         min-height: 150px;
-        padding: 10px 15px;
+        padding: 20px 55px;
         background-color: rgba(27, 45, 73, 0.7);
         backdrop-filter: blur(10px);
+    }
+    .textTypeFilters {
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(2,auto);
+        margin-bottom: 30px;
+
+        input, select {
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            width: 250px;
+            height: 35px;
+            background-color: rgba(255, 255, 255, 0.171);
+            color: white;
+        }
+        option {
+            color: rgb(18, 24, 32);
+            font-weight: 500;
+        }
+
+    }
+    .checkboxTypeFilters {
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+
+        input {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .finishBar {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        button {
+            transition: .2s;
+            background-color: rgba(255, 255, 255, 0.171);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.685);
+            width: 250px;
+            height: 40px;
+        }
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.322);
+            color: rgb(255, 255, 255);
+
+        }
+        a {
+            color: rgba(255, 255, 255, 0.336);
+            cursor: pointer;
+            text-decoration: underline;
+        }
     }
 }

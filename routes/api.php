@@ -24,14 +24,3 @@ Route::prefix("/arts")->group(function () {
 
 
 
-
-/*
-- get art by id
-- get all arts
-- get specific amount of arts, point out "from" and "to"
-- get arts by filters
-
-
-
-
-*/

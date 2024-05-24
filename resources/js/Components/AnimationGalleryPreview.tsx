@@ -4,7 +4,7 @@ import textTrimmer from '@/utils/textTrimmer'
 export default function AnimationGallerySliderComponent() {
     const animationPreviews = [
         {image:"./images/animationGalleryPreviewSlider_gifs/1.gif", name:"Home Grown Dogs", description:"The plot of this animation is based on one of my side proje of this bthisased is bthisa sed on of this ani "},
-        {image:"./images/animationGalleryPreviewSlider_gifs/3.gif", name:"Home Grown Dogs", description:"The plot of this animation is based on one of my side proje"}
+        {image:"./images/animationGalleryPreviewSlider_gifs/3.gif", name:"Ho", description:"The plot of this animation is based on one of my side proje"}
 
     ]
 
