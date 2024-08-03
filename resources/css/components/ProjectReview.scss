@@ -1,0 +1,64 @@
+
+.ProjectReviewComponent {
+    backdrop-filter: blur(10px); 
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        width: 1270px;
+    }
+    %ProjectReviewComponent__image {
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        margin: 0 auto;
+        width: auto;
+        top: 0;
+        padding: 30px 0 30px 0;
+ 
+        .showName {
+            position: absolute;
+            left: 10%;
+            top: 65%;
+        }
+        img {
+            filter: brightness(65%);
+        }
+
+    }
+    .primaryImage {
+        @extend %ProjectReviewComponent__image;
+        left: 0;
+    }
+    .secondaryImage {
+        @extend %ProjectReviewComponent__image;
+        left: 10%;
+    }
+    .tertiaryImage {
+        @extend %ProjectReviewComponent__image;
+        left: 18%;
+    }
+
+
+    // .primaryImage_curr {
+    //     @extend %ProjectReviewComponent__image;
+    //     left: 0;
+    //     z-index: 4;
+    // }
+    // .secondaryImage_curr {
+    //     @extend %ProjectReviewComponent__image;
+    //     left: 10%;
+    //     z-index: 4;
+    // }
+    // .tertiaryImage_curr {
+    //     @extend %ProjectReviewComponent__image;
+    //     left: 18%;
+    //     z-index: 4;
+    // }
+}
+
